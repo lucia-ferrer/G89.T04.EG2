@@ -5,4 +5,4 @@ def recognizer_nie(ID):
 
 def recognizer_nif(dni):
    letter=dni[-1]
-   number=dni[0:7]
+   number=int(dni[0:7])
