@@ -1,6 +1,6 @@
-def recognizer_nie(ID):
-    letter = ID[0]
-    number = ID[1:7]
+def recognizer_nie(id):
+    letter = id[0]
+    number = id[1:7]
     number = int(number)
 
 def recognizer_nif(dni):
@@ -11,3 +11,4 @@ def recognizer_nif(dni):
    return -1
 
 def converse_letter(n):
+    return "L"
