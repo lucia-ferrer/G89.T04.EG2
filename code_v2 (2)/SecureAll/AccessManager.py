@@ -6,10 +6,20 @@ class AccessManager:
     def __init__(self):
         pass
 
+    @staticmethod
     def ValidateDNI(self, DNI):
         # PLEASE INCLUDE HERE THE CODE FOR VALIDATING THE DNI
         # RETURN TRUE IF THE DNI IS RIGHT, OR FALSE IN OTHER CASE
-        return True
+        letter = DNI[-1]
+        number = int(DNI[0:7])
+        letters = {0: "T", 1: "R", 2: "W", 3: "A", 4: "G", 5: "M", 6: "Y",
+                   7: "F", 8: "P", 9: "D", 10: "X", 11: "B", 12: "N", 13: "J",
+                   14: "Z", 15: "S", 16: "Q", 17: "V", 18: "H", 19: "L", 20: "C", 21: "K", 22: "E"}
+        n = number % 23
+        if letter == letters[n]:
+            return True
+        return False
+
 
     def ReadaccessrequestfromJSON(self, fi):
 
