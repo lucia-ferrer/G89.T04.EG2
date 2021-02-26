@@ -1,9 +1,10 @@
 from SecureAll import AccessManager
 from SecureAll import AccessRequest
 
+
 def main():
     mng = AccessManager()
-    res = mng.ReadaccessrequestfromJSON("test.json")
+    res = mng.readaccess_requestfromjson("test.json")
     print(res)
 
 
