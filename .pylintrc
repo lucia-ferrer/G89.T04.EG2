@@ -258,6 +258,8 @@ good-names=i,
            res,
            n,
            fi,
+           f,
+           e,
            _
 
 # Good variable names regexes, separated by a comma. If names match any regex,

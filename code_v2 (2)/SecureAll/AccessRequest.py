@@ -2,8 +2,9 @@
 import json
 from datetime import datetime
 
-""" This contains only 1 class"""
+
 class AccessRequest:
+    """ This contains only 1 class"""
     def __init__(self, id_document, full_name):
         self.__name = full_name
         self.__id_document = id_document
@@ -13,17 +14,17 @@ class AccessRequest:
     def __str__(self):
         return "AccessRequest:" + json.dumps(self.__dict__)
 
-    """ This contains 2 functions """
     @property
     def name(self):
+        """ This contains 1 functions """
         return self.__name
     @name.setter
     def name(self, value):
         self.__name = value
 
-    """ This function contains 2 functions """
     @property
     def id_document(self):
+        """ This function contains 1 functions """
         return self.__id_document
     @id_document.setter
     def id_document(self, value):
