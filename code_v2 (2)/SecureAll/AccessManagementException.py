@@ -1,8 +1,8 @@
-""" This class is to manage exceptions """
+""" This file contains the class to manage exceptions """
 
 
 class AccessManagementException(Exception):
-    """ This class is to manage exceptions """
+    """ Here are the sttributes and methods regarding Exceptions management """
 
     def __init__(self, message):
         self.__message = message
@@ -10,7 +10,7 @@ class AccessManagementException(Exception):
 
     @property
     def message(self):
-        """ This function requires """
+        """ This function represents the getter"""
         return self.__message
 
     @message.setter

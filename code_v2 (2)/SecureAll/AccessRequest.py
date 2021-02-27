@@ -1,10 +1,10 @@
-""" Import """
+""" Import data and classes"""
 import json
 from datetime import datetime
 
 
 class AccessRequest:
-    """ This contains only 1 class"""
+    """ Here are the methods and attributes regarding Access Request"""
     def __init__(self, id_document, full_name):
         self.__name = full_name
         self.__id_document = id_document
@@ -16,7 +16,7 @@ class AccessRequest:
 
     @property
     def name(self):
-        """ This contains 1 functions """
+        """ This represents the getter and setter"""
         return self.__name
     @name.setter
     def name(self, value):
@@ -24,7 +24,7 @@ class AccessRequest:
 
     @property
     def id_document(self):
-        """ This function contains 1 functions """
+        """ This function contains 1 functions representing the getter in python """
         return self.__id_document
     @id_document.setter
     def id_document(self, value):
