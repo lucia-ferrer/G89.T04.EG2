@@ -1,7 +1,6 @@
 """The program begins here."""
 from SecureAll import AccessManager
-#from SecureAll import AccessRequest... imported but unused.
-
+# from SecureAll import AccessRequest... imported but unused.
 
 def main():
     """This function starts the program"""
